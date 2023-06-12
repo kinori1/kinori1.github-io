@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body .shell-main-nav ul li:nth-child(2)~.nav-box {
+            left: 120px;
+            background-color: red;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(248, 248, 248);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        body .shell-main-nav {
+            margin-bottom: 0;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70%;
+            overflow-x: hidden;
+            transform: translateY(0px);
+            background-color: #fff;
+            transition: .3s;
+            padding: 50px;
+            border: 1px solid #000;
+        }
+
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('./image/wallhaven-l8mykq.jpg');
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .img::after {
+            content: '我的博客';
+            width: 500px;
+            height: 200px;
+            border-radius: 3px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: #fff 10px solid;
+            color: #fff;
+            letter-spacing: 30px;
+            font: 100 70px 'font';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+
+        aside {
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(240, 240, 224);
+            padding: 50px 0;
+        }
+
+        .bottom {
+            width: 1300px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .bottom::after {
+            content: 'QQ:10086';
+            position: absolute;
+            top: -170px;
+            width: 100%;
+            text-align: center;
+            font: 300 40px '';
+        }
+
+        .bottom img {
+            width: 23%;
+            height: 300px;
+        }
+
+        pre {
+            display: block;
+            width: 70%;
+            font-size: large;
+            line-height: 50px;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            *word-wrap: break-word;
+            *white-space: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="shell-main">
+            <div class="shell-main-nav">
+                <div class="logo">
+                    <img src="image/2225060670(1)(1).jpg" alt="">
+                    <span>CAX</span>
+                </div>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./LOG.html">BLOG</a></li>
+                    <li><a href="./SCHOOL.html">SCHOOL</a></li>
+                    <li><a href="./MY.html">MY</a></li>
+                    <li><a href="./Login.html">LOGIN</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+            <div class="img"></div>
+            <div class="main">
+
+                <aside>
+                    <h2 style="font-size: 30px; margin-top: 30px;">博客</h2><br />
+                    <span>散文摘抄</span>
+                    <p style="margin-top: 50px;font-size: 18px; color: #37373796;">
+                    <pre>                    
+    人就是为了活着本身而活着，而不就是为了活着之外的任何事物而活着。
+    
+    炊烟在农舍的屋顶袅袅升起，在霞 光四射的空中分散后消隐了。 女人吆喝孩子的声音此起彼伏，一 个男人挑着粪桶从我跟前走过，扁担吱 呀吱呀一路响了过去。慢慢地，田野趋向了宁静，四周出现了模糊，霞光逐渐退去。 我知道黄昏正在转瞬即逝，黑夜从而降了。我看到广阔的土地袒露着结 实的胸膛，那是召唤的姿态，就像女人 召唤着她们的儿女，土地召唤着黑夜来临。
+    
+    随着时间的推移，我内心的愤怒渐渐平息，我开始意识到一位真正的作家所寻找的是真理，是一种排斥道德判断的真理。作家的使命不是发泄，不是控诉或者揭露，他应该向人们展示高尚。这里所说的高尚不是那种单纯的美好，而是对一切事物理解之后的超然，对善与恶一视同仁，用同情的目光看待世界。
+
+                        </pre>
+                    </p>
+                </aside>
+            </div>
+
+            <div class="shell-main-footer">
+                <span>CAX</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
